@@ -366,17 +366,18 @@ SELECT region, gubun, avg(LOAN_JAN_AMT) AS loan_avg
 --   WHERE GUBUN = '기타대출'
 --   ORDER BY AVG(LOAN_JAN_AMT) DESC
 --   ROWNUM 사용
-SELECT a.region, a.loan_avg 
+SELECT a.region, round(a.loan_avg)
 FROM (
 	SELECT region, avg(loan_jan_amt) AS loan_avg
 	  FROM KOR_LOAN_STATUS
 	 WHERE gubun = '기타대출'
 	 GROUP BY region
 	-- FETCH FIRST 3 ROWS ONLY
+	 ORDER BY avg(loan_jan_amt) DESC
 ) a
 WHERE ROWNUM <= 3 
 --ORDER BY AVG(LOAN_JAN_AMT) DESC
-ORDER BY a.loan_avg DESC
+--ORDER BY a.loan_avg DESC
 ;
 
 
