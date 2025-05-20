@@ -101,11 +101,27 @@ div.circle1 {
   border-radius: 50%;
 }
 
+div.circle1:hover {
+  width: 100px;
+  height: 100px;
+  background-color: white;
+  border-radius: 50%;
+  border: 1px solid rgb(9, 170, 92);
+}
+
 div.circle2 {
   width: 100px;
   height: 100px;
   border-radius: 50%;
   border: 1px solid rgb(9, 170, 92);
+}
+
+div.circle2:hover {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: rgb(9, 170, 92); 
+  border: 0px none white;
 }
 
 div.login {
