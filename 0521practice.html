@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./css/landingpage.css" />
+  <style>
+    header {
+      /* margin: 1px; */
+    }
+
+    .box1 {
+      display: flex;
+      align-items: center;
+      /* 세로 가운데 정렬 */
+      justify-content: space-between;
+      /* 좌우 박스 분리 정렬 */
+      height: 50px;
+    }
+
+    .box1 .leftbox {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      /* 아이템 간 간격 */
+    }
+
+    .box1 .leftbox .fi-icon1 {
+      width: 60px;
+      height: 50px;
+      font-size: 10px;
+      color: black;
+    }
+
+    .box1 .leftbox .se-icon1 {
+      width: 60px;
+      height: 50px;
+      font-size: 10px;
+      color: black;
+    }
+
+    .box1 .middlebox {
+      width: 445px;
+      height: 50px;
+    }
+
+    .box1 .rightbox {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .box1 .rightbox .fi-icon2 {
+      width: 40px;
+      height: 50px;
+      font-size: 10px;
+      padding-right: 10px;
+      color: black;
+    }
+
+    .box1 .rightbox .se-icon2 {
+      width: 40px;
+      height: 50px;
+      font-size: 10px;
+      color: black;
+    }
+
+    .box1 .rightbox .th-icon2 {
+      width: 40px;
+      height: 50px;
+      font-size: 10px;
+      color: black;
+    }
+
+    .th-icon2 img {
+      width: 15px;
+      height: auto;
+    }
+
+    .box1 .rightbox .fo-icon2 {
+      width: 40px;
+      height: 50px;
+      font-size: 10px;
+      margin-left: -10px;
+      color: black;
+    }
+
+    .fo-icon2 img {
+      width: 18px;
+      height: auto;
+    }
+
+    .mainpage {
+      display: block;
+      text-align: center;
+      padding-top: 150px;
+    }
+
+    .imagelogo {
+      width: 200px;
+      display: inline-block;
+    }
+
+    .imagelogo img {
+      width: 150px;
+      height: auto;
+      margin-bottom: 10px;
+    }
+
+    .mainpage .bigtextbox {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 350px;
+      height: 15px;
+      padding: 8px 16px;
+      font-size: 10px;
+      border: 2px solid #ccc;
+      border-radius: 100px;
+      margin: 0 auto;
+      background-color: white;
+    }
+
+    .bigtextbox input {
+      flex: 1;
+      border: none;
+      outline: none;
+      font-size: 16px;
+      padding-left: 10px;
+      background: transparent;
+    }
+
+    .bigtextbox .search {
+      width: 24px;
+      height: 24px;
+      margin-left: 10px;
+      cursor: pointer;
+    }
+
+    .bigtextbox .search img {
+      width: 100%;
+      height: auto;
+
+    }
+
+    .commentzip {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      gap: 15px;
+      margin-top: 20px;
+    }
+
+    .mainpage .comment1 {
+      font-size: 13px;
+    }
+
+    .mainpage .comment2 {
+      font-size: 13px;
+    }
+
+    .mainpage .commentzip .comment3 {
+      font-size: 13px;
+      width: 100%;
+      text-align: center;
+    }
+
+    .mainpage .commentzip .comment3 .comment31,
+    .mainpage .commentzip .comment3 .comment32 {
+      display: inline-block;
+      text-align: center;
+      margin: 0 2px;
+    }
+
+    .mainpage .commentzip .comment3 .comment31 {
+      color: red;
+    }
+
+    .mainpage .commentzip .comment3 .comment32 {
+      color: black;
+    }
+
+    .icon {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .icon img {
+      width: 20px;
+      height: auto;
+      cursor: pointer;
+    }
+  </style>
+</head>
+
+<body>
+  <header class="box1"> <!-- hearder 전체 -->
+    <div class="leftbox"> <!-- leftbox google정보, 스토어 -->
+      <div class="fi-icon1">Google정보</div>
+      <div class="se-icon1">스토어</div>
+    </div>
+    <div class="middlebox"></div> <!-- middl box-->
+
+    <div class="rightbox"> <!-- rightbox gmail, 이미지, search.svg, apps.svg-->
+      <div class="fi-icon2">Gmail</div>
+      <div class="se-icon2">이미지</div>
+      <div class="th-icon2">
+        <img src="./images/searchlabs.svg">
+      </div>
+      <div class="fo-icon2">
+        <img src="./images/apps.svg">
+      </div>
+    </div>
+  </header>
+
+  <main class="mainpage"> <!-- 중간에 mainpage 전체-->
+    <div class="imagelogo"> <!-- googlelogo-->
+      <img src="./images/google.svg">
+    </div>
+    <div class="bigtextbox"> <!-- textbox안에 icon 4개-->
+      <div class="search-icon">
+        <img src="./images/search.svg">
+      </div>
+      <input type="text" placeholder="검색어를 입력하세요">
+      <div class="icon">
+        <img src="./images/keyboard.svg">
+        <img src="./images/mic.svg">
+        <img src="./images/focus.svg">
+      </div>
+    </div>
+    </div>
+    <div class="commentzip"> <!-- google검색~공개합니다 까지 comments-->
+      <div class="comment1">Google 검색</div>
+      <div class="comment2">I'm Feeling Lucky</div>
+      <div class="comment3">
+        <div class="comment31">지금 시청해보세요!</div>
+        <div class="comment32">Google I/O 2025에서 최신 AI 혁신 기술을 공개합니다</div>
+      </div>
+    </div>
+  </main>
+  <footer>
+  </footer>
+</body>
+
+</html>
